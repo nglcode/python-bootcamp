@@ -13,3 +13,6 @@ for data_item in question_data:
 qb = QuizBrain(question_bank)
 while qb.still_has_questions():
     qb.next_question()
+
+print("You've completed the quiz")
+print(f"Your final score was: {qb.score}/{qb.question_number}")
